@@ -2,7 +2,6 @@
   "name": "pet-care",
   "version": "1.0.0",
   "description": "Proyecto de ejemplo de React.js con Tailwind CSS y Vite",
-  "main": "index.js",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -22,6 +21,7 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@iconify/react": "^4.1.0",
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
     "@vitejs/plugin-react": "^4.0.0-beta.0",
