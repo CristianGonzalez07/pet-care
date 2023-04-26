@@ -50,7 +50,7 @@ export default function
 ];
 
   return (
-    <div className='h-[1400] lg:h-[1000px] w-full bg-texture bg-fixed pb-20'>
+    <div id="Contact" className='h-[1400] lg:h-[1000px] w-full bg-texture bg-fixed pb-20'>
       <div className='pt-10 flex justify-center'>
         <div className='w-[90%] border-b-2 border-b-primary'/>
       </div>

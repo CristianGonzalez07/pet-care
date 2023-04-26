@@ -6,7 +6,7 @@ import Button from "./Button";
 
 export default function Header() {
   return (
-    <div className="bg-texture bg-fixed bg-no-repeat h-[700px] lg:h-[800px] w-full">
+    <div id="Home" className="bg-texture bg-fixed bg-no-repeat h-[700px] lg:h-[800px] w-full">
       <Navbar/>
       <div className="h-[75%] lg:h-full w-full">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-6 md:h-full w-full h-[50%]">
