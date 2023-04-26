@@ -1,4 +1,4 @@
-# React.js con Tailwind CSS y Vite
+# Pet Care
 
 Este es un proyecto de ejemplo de React.js con Tailwind CSS y Vite.
 
