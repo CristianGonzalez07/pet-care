@@ -7,11 +7,12 @@ module.exports = {
       },
       textColor: {
         'primary': '#8332AC',
-        'primary-dark':"#240E2F",
+        'primary-dark':"#481C5E",
         'primary-light':"#A352CB"
       },
       backgroundColor:{
         'primary': '#8332AC',
+        'primary-dark':"#240E2F",
       },
       backgroundImage:{
         'texture': "url('./src/assets/Texture.jpg')",
