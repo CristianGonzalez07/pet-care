@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import Logo from "../assets/Logo.svg";
 
 const scroll = (value) => {
@@ -9,8 +10,17 @@ const scroll = (value) => {
 }
 
 export default function Navbar() {
+
   return (
-    <div className="grid grid-cols-2 md:grid-cols-6 h-[100px] bg-transparent">
+    <motion.div 
+      className="grid grid-cols-2 md:grid-cols-6 h-[100px] bg-transparent"
+      initial={{ opacity:0 }}
+      animate={{ opacity:1 }}
+      transition={{
+        ease: "linear",
+        duration: 0.5,
+      }}
+    >
       <div className="md:col-span-3 lg:col-span-2 flex items-center justify-center mx-2">
         <img src={Logo}></img>
       </div>
@@ -68,6 +78,6 @@ export default function Navbar() {
           </li>
         </ul>
       </nav>
-    </div>
+    </motion.div>
   );
 }

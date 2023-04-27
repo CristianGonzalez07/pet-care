@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import CarouselComponent from "./Carousel"
 import cardImg from "../assets/card-img-1.jpg"
 
@@ -31,8 +32,17 @@ export default function
     }
   ]
   return (
-    <div id="Services" className='bg-white h-[700px]'>
-      <CarouselComponent items={items}/>
-    </div>
+    <motion.div 
+      id="Services" 
+      className='bg-white h-[700px]'
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{
+        ease: "linear",
+        duration: 1,
+      }} 
+    >
+      <CarouselComponent items={items} />
+    </motion.div>
   )
 }

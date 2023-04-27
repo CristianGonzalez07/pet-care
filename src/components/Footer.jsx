@@ -1,8 +1,17 @@
 import { Icon } from '@iconify/react';
+import { motion } from "framer-motion";
 
 export default function Footer() {
   return (
-    <div className='h-[100px] bg-primary-dark grid md:grid-cols-3 grid-cols-1 pt-2 absolute w-full'>
+    <motion.div 
+      className='h-[100px] bg-primary-dark grid md:grid-cols-3 grid-cols-1 pt-2 absolute w-full'
+      initial={{ y:"-50px", opacity:0 }}
+      whileInView={{ y:0, opacity: 1 }}
+      transition={{
+        ease: "linear",
+        duration: 0.7,
+      }}
+    >
       <div className='flex items-center justify-center'>
         <p className='text-white font-sigmar text-xs '>© 2023 All rights reserved.</p>
       </div>
@@ -32,6 +41,6 @@ export default function Footer() {
           <Icon className="inline h-[40px] w-[40px] text-white" icon="solar:round-alt-arrow-up-linear"/>
         </button>
       </div>
-    </div>
+    </motion.div>
   )
 }

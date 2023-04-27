@@ -17,6 +17,7 @@
   "author": "Cristian Gonzalez",
   "license": "MIT",
   "dependencies": {
+    "framer-motion": "^10.12.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-grid-carousel": "^1.0.1",
