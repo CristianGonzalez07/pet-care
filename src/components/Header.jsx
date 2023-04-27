@@ -5,6 +5,16 @@ import Button from "./Button";
 
 
 export default function Header() {
+
+  const onClick = (e) => {
+    e.preventDefault();
+    const element = document.getElementById("Contact");
+    element.scrollIntoView({
+      behavior: 'smooth',
+      block: 'center'
+    });
+  }
+
   return (
     <div id="Home" className="bg-texture bg-fixed bg-no-repeat h-[700px] lg:h-[800px] w-full">
       <Navbar/>
@@ -20,7 +30,11 @@ export default function Header() {
               <p className="md:text-xl lg:text-2xl text-xs">for your adorable pets.</p>
             </h2>
             <div className="w-full h-full lg:ml-20 mt-10">
-              <Button text="Make an appointment" icon="mdi:calendar-check"/>
+              <Button 
+                text="Make an appointment" 
+                icon="mdi:calendar-check"
+                onClick={onClick}
+              />
             </div>
           </div>
           <div className="h-full w-full flex items-center justify-center md:col-start-2 lg:col-start-3 xl:col-start-5 lg:col-span-3">

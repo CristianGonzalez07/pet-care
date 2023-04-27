@@ -35,20 +35,20 @@ export default function
     {
       type:"text",
       label:"name",
-      error:<sm className="text-red-600 font-sigmar text-xs">This field is required*</sm>,
+      error:<p className="text-red-600 font-sigmar text-xs">This field is required*</p>,
     },
     {
       type:"text",
       label:"email",
-      error:<sm className="text-red-600 font-sigmar text-xs">This field is required*</sm>,
+      error:<p className="text-red-600 font-sigmar text-xs">This field is required*</p>,
     },
     {
       type:"text",
       label:"message",
-      error:<sm className="text-red-600 font-sigmar text-xs">This field is required*</sm>,
+      error:<p className="text-red-600 font-sigmar text-xs">This field is required*</p>,
     }
-];
-
+  ];
+  
   return (
     <div id="Contact" className='h-[1400] lg:h-[1000px] w-full bg-texture bg-fixed pb-20'>
       <div className='pt-10 flex justify-center'>

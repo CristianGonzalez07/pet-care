@@ -3,14 +3,13 @@ import Button from "./Button";
 
 export default function Form({inputs, onSubmit}) {
   const { register, handleSubmit, formState: { errors } } = useForm();
-  console.log({errors})
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
-      {inputs.map(input => {
+      {inputs.map((input, index)=> {
         return (
-          <div className="mb-5">
+          <div className="mb-5" key={`input-${index}`}>
             <label 
-              for={input.label}
+              htmlFor={input.label}
               className="block mb-2 text-sm font-medium text-primary-dark font-sigmar"
             >
               {input.label}
@@ -36,7 +35,7 @@ export default function Form({inputs, onSubmit}) {
         )
       })}
       <div className="flex justify-center mt-10">
-        <Button text="Send Message" icon="ic:round-email"/>
+        <Button text="Send Message" icon="ic:round-email" onClick={() => {console.log("click")}}/>
       </div>
     </form>
   )

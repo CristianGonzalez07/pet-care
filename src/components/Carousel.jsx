@@ -29,9 +29,9 @@ export default function CarouselComponent({ items }) {
           }
         >
           {
-            items.map(item => {
+            items.map((item, index) => {
               return(
-                <Carousel.Item>
+                <Carousel.Item key={`carousel-${index}`}>
                   <Card value={item}/>
                 </Carousel.Item>
               )
