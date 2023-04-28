@@ -24,7 +24,7 @@ export default function
   return (
     <motion.div 
       id="Services" 
-      className='bg-white h-[700px] flex justify-center items-center'
+      className='bg-white h-full w-full flex justify-center items-center py-[100px] px-[10%]'
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{
@@ -32,7 +32,7 @@ export default function
         duration: 1,
       }} 
     >
-      <div className="w-[70%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5"> 
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 w-full"> 
         {items.map(item => <Card value={item}/>)}
       </div>
     </motion.div>

@@ -54,11 +54,11 @@ export default function
     <motion.div 
       id="Contact" 
       className='h-[1400] lg:h-[1000px] w-full bg-texture bg-fixed pb-20'
-      initial={{ y:"-50px", opacity:0 }}
-      whileInView={{ y:0, opacity: 1 }}
+      initial={{ scale:0.5, opacity:0 }}
+      whileInView={{ scale:1, opacity: 1 }}
       transition={{
-        ease: "linear",
-        duration: 0.7,
+        ease: "easeInOut",
+        duration: 0.7
       }} 
     >
       <div className='pt-10 flex justify-center'>
