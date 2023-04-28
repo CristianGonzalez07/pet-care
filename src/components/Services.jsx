@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
-import CarouselComponent from "./Carousel"
 import cardImg from "../assets/card-img-1.jpg"
+import Card from "./Card"
 
 export default function 
 () {
@@ -20,21 +20,11 @@ export default function
       title:"Title",
       description:"Non dolore incididunt reprehenderit duis sunt tempor sint."
     },
-    {
-      img:cardImg,
-      title:"Title",
-      description:"Non dolore incididunt reprehenderit duis sunt tempor sint."
-    },
-    {
-      img:cardImg,
-      title:"Title",
-      description:"Non dolore incididunt reprehenderit duis sunt tempor sint."
-    }
   ]
   return (
     <motion.div 
       id="Services" 
-      className='bg-white h-[700px]'
+      className='bg-white h-[700px] flex justify-center items-center'
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{
@@ -42,7 +32,9 @@ export default function
         duration: 1,
       }} 
     >
-      <CarouselComponent items={items} />
+      <div className="w-[70%] grid grid-cols-3 gap-5"> 
+        {items.map(item => <Card value={item}/>)}
+      </div>
     </motion.div>
   )
 }

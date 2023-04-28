@@ -15,7 +15,7 @@ module.exports = {
         'primary-dark':"#240E2F",
       },
       backgroundImage:{
-        'texture': "url('./src/assets/Texture.jpg')",
+        'texture': "url('https://duruthemes.com/demo/html/vetforpet/images/icons/bg.jpg')",
       },
       borderColor:{
         'primary': '#8332AC'
